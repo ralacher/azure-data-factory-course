@@ -1,0 +1,18 @@
+title: Azure Data Factory
+description: >-
+  Course showing how to implement CI/CD for Azure Data Factory using GitHub
+  Actions.
+template:
+  repo: azure-data-factory-template
+  name: azure-data-factory
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
